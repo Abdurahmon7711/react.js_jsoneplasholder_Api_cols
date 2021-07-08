@@ -1,10 +1,7 @@
 import { useEffect, useState } from 'react';
 import { doPosts } from '../serves';
 
- 
-
 function Posts({history}) {
-
     function filter(userId) {
         return  data.filter(item => (item.userId == userId || userId === ''))
     }

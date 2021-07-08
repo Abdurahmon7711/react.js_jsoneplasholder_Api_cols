@@ -6,3 +6,13 @@ export function doPosts (url){
         return respons.data
     })
 }
+
+// export function doPosts (url){
+//     return axios.get({'https://jsonplaceholder.typicode.com',
+//     params:{
+//         _limit=5
+//     }
+// }).then((respons) => {
+//         return respons.data
+//     })
+// }    

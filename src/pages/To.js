@@ -4,19 +4,24 @@ function To({ item }) {
         transform: 'scale(1.5)'
     }
     return (
-        <div className="row" >
+        <div className="row">
 
-            <div className="col-md-1" >
-                <input style={chackstyle} type="checkbox" id={'ids/' + item.id} defaultChecked={item.completed} />
+            <div className="col-md-1">
+                <input style={chackstyle} type="checkbox" id={'ids/' + item.id} checked={item.completed}/>
             </div>
+
             <div className="col-md-5">
                 <label htmlFor={'ids/' + item.id}>
                     <h4>{item.title}</h4>
                 </label>
             </div>
-        </div>
 
+        </div>
     )
 }
-
 export default To;
+
+
+
+
+
